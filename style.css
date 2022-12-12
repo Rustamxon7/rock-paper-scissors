@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(30, 38, 71);
+    font-family: 'Poppins', sans-serif;
+font-family: 'Rubik', sans-serif
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.header--container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15rem;
+   padding: 1rem;
+    width: 50%;
+    height: 9rem;
+    border: 0.2px solid white;
+    border-radius: 1rem;
+}
+
+.title {
+    line-height: 2.4rem;
+color: #ffff;
+}
+
+.score--board {
+    width: 9rem;
+    height: 7rem;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.8rem;
+    
+}
+
+.score {
+    font-size: 0.8rem;
+}
+
+.score--number {
+    font-size: 2.6rem;
+}
+
+.playground--special {
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.weapons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weap--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+.weapon-punch {
+    border-radius: 50%;
+background-color: #ffff;
+width: 10rem;
+height: 10rem;    
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.weapon-slap {
+    border-radius: 50%;
+    background-color: #ffff;
+width: 10rem;
+height: 10rem;    
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.mini {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.4rem 0;
+}
+
+.mini-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(184, 184, 45);
+width: 12.5rem;
+height: 12.5rem;    
+border-radius: 50%;
+}
+
+.weapon-scissor {
+    background-color:#ffff;
+width: 10rem;
+height: 10rem;    
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+}
+
+.border-color {
+display: flex;
+align-items: center;
+justify-content: center;
+    width: 12.5rem;
+height: 12.5rem;
+background-color: rgb(35, 21, 187);
+border-radius: 50%;
+}
+
+.punch-color {
+    display: flex;
+align-items: center;
+justify-content: center;
+    width: 12.5rem;
+height: 12.5rem;
+background-color: rgb(196, 57, 26);
+border-radius: 50%;
+}
+
+.rules {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 2rem;
+}
+
+.btn-rules {
+    background-color: rgb(30, 38, 71);
+    color: #ffff;
+    padding: 0.2rem 2rem;
+    border-color: #ffff;
+}

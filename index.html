@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&family=Poppins:wght@400;500;600&family=Rubik:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Rock paper scissors</title>
   </head>
@@ -11,31 +17,54 @@
     <!-- Dashboard -->
     <div class="dashboard">
       <div class="header">
-        <h1>Rock Paper Scissors</h1>
-        <div class="score--board">
-          <p class="score">SCORE</p>
-          <p class="score--number">0</p>
+        <div class="header--container">
+          <div class="title">
+            <h1>
+              Rock <br />
+              Paper <br />
+              Scissors
+            </h1>
+          </div>
+
+          <div class="score--board">
+            <p class="score">SCORE</p>
+            <p class="score--number">12</p>
+          </div>
         </div>
       </div>
 
       <!-- Step 1 -->
-      <div class="playground">
+      <div class="playground--special">
         <div class="weapons">
-          <div class="weapon">
-            <img src="images/icon-rock.svg" alt="rock" />
+          <div class="weap--container">
+            <div class="punch-color">
+              <div class="weapon-punch">
+                <img src="images/icon-rock.svg" alt="rock" />
+              </div>
+            </div>
+            <div class="border-color">
+              <div class="weapon-slap">
+                <img src="images/icon-paper.svg" alt="paper" />
+              </div>
+            </div>
           </div>
-          <div class="weapon">
-            <img src="images/icon-paper.svg" alt="paper" />
-          </div>
-          <div class="weapon">
+        </div>
+      </div>
+      <div class="mini">
+        <div class="mini-container">
+          <div class="weapon-scissor">
             <img src="images/icon-scissors.svg" alt="scissors" />
           </div>
         </div>
       </div>
 
-      <!-- Step 2 -->
-      <div class="playground">
-        <!-- Your side and AI side -->
+      <div class="rules">
+        <button class="btn-rules" type="button">R U L E S</button>
+      </div>
+
+      <!-- Step 2
+      <div class="playground"> -->
+        <!-- Your side and AI side 
         <div class="side">
           <div class="side--header">
             <p class="side--header--text">YOU PICKED</p>
@@ -52,11 +81,11 @@
           <div class="side--body>
           <img src="images/icon-paper.svg" alt="paper" />
         </div>
-      </div>
+      </div>-->
 
       <!-- Step 3 -->
-      <div class="playground">
-        <!-- Your side and AI side -->
+      <!-- <div class="playground">
+        Your side and AI side
         <div class="side">
           <div class="side--header">
             <p class="side--header--text">YOU PICKED</p>
@@ -64,9 +93,9 @@
           <div class="side--body">
             <img src="images/icon-rock.svg" alt="rock" />
           </div>
-        </div>
+        </div> -->
 
-        <!-- You win or lose -->
+        <!-- You win or lose
         <div class="result">
           <p class="result--text">YOU WIN</p>
           <button class="play-again">PLAY AGAIN</button>
@@ -79,13 +108,13 @@
           <div class="side--body>
           <img src="images/icon-paper.svg" alt="paper" />
         </div>
-      </div>
+      </div> -->
 
-      <!-- Rules -->
+      <!-- Rules 
       <button class="rules">RULES</button>
-    </div>
+    </div>-->
 
-    <!-- Rules -->
+    <!-- Rules 
 
     <div class="rules--container">
       <div class="rules--content">
@@ -108,7 +137,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <script src="script.js"></script>
   </body>
