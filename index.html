@@ -8,6 +8,108 @@
     <title>Rock paper scissors</title>
   </head>
   <body>
+    <!-- Dashboard -->
+    <div class="dashboard">
+      <div class="header">
+        <h1>Rock Paper Scissors</h1>
+        <div class="score--board">
+          <p class="score">SCORE</p>
+          <p class="score--number">0</p>
+        </div>
+      </div>
+
+      <!-- Step 1 -->
+      <div class="playground">
+        <div class="weapons">
+          <div class="weapon">
+            <img src="images/icon-rock.svg" alt="rock" />
+          </div>
+          <div class="weapon">
+            <img src="images/icon-paper.svg" alt="paper" />
+          </div>
+          <div class="weapon">
+            <img src="images/icon-scissors.svg" alt="scissors" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="playground">
+        <!-- Your side and AI side -->
+        <div class="side">
+          <div class="side--header">
+            <p class="side--header--text">YOU PICKED</p>
+          </div>
+          <div class="side--body">
+            <img src="images/icon-rock.svg" alt="rock" />
+          </div>
+        </div>
+
+        <div class="side">
+          <div class="side--header">
+            <p class="side--header--text">THE HOUSE PICKED</p>
+          </div>
+          <div class="side--body>
+          <img src="images/icon-paper.svg" alt="paper" />
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="playground">
+        <!-- Your side and AI side -->
+        <div class="side">
+          <div class="side--header">
+            <p class="side--header--text">YOU PICKED</p>
+          </div>
+          <div class="side--body">
+            <img src="images/icon-rock.svg" alt="rock" />
+          </div>
+        </div>
+
+        <!-- You win or lose -->
+        <div class="result">
+          <p class="result--text">YOU WIN</p>
+          <button class="play-again">PLAY AGAIN</button>
+        </div>
+
+        <div class="side">
+          <div class="side--header">
+            <p class="side--header--text">THE HOUSE PICKED</p>
+          </div>
+          <div class="side--body>
+          <img src="images/icon-paper.svg" alt="paper" />
+        </div>
+      </div>
+
+      <!-- Rules -->
+      <button class="rules">RULES</button>
+    </div>
+
+    <!-- Rules -->
+
+    <div class="rules--container">
+      <div class="rules--content">
+        <div class="rules--header">
+          <h1>Rules</h1>
+          <button class="close--rules">X</button>
+        </div>
+        <div class="rules--body">
+          <div class="rule">
+            <img src="images/icon-rock.svg" alt="rock" />
+            <p>Rock crushes Scissors</p>
+          </div>
+          <div class="rule">
+            <img src="images/icon-paper.svg" alt="paper" />
+            <p>Paper covers Rock</p>
+          </div>
+          <div class="rule">
+            <img src="images/icon-scissors.svg" alt="scissors" />
+            <p>Scissors cuts Paper</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
