@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&family=Poppins:wght@400;500;600&family=Rubik:wght@500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -42,18 +44,21 @@
                 <img src="images/icon-rock.svg" alt="rock" />
               </div>
             </div>
+            <span class="line"></span>
+            <span></span>
             <div class="border-color">
               <div class="weapon-slap">
                 <img src="images/icon-paper.svg" alt="paper" />
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="mini">
-        <div class="mini-container">
-          <div class="weapon-scissor">
-            <img src="images/icon-scissors.svg" alt="scissors" />
+            <span class="line1"></span>
+
+            <div class="scissor-color">
+              <div class="weapon-scissor">
+                <img src="images/icon-scissors.svg" alt="scissors" />
+              </div>
+            </div>
+            <span class="line3"></span>
           </div>
         </div>
       </div>
@@ -62,9 +67,9 @@
         <button class="btn-rules" type="button">R U L E S</button>
       </div>
 
-      <!-- Step 2
-      <div class="playground"> -->
-        <!-- Your side and AI side 
+      <!-- Step 2 -->
+      <div class="playground hidden">
+        Your side and AI side
         <div class="side">
           <div class="side--header">
             <p class="side--header--text">YOU PICKED</p>
@@ -81,10 +86,10 @@
           <div class="side--body>
           <img src="images/icon-paper.svg" alt="paper" />
         </div>
-      </div>-->
+      </div>
 
       <!-- Step 3 -->
-      <!-- <div class="playground">
+      <div class="playground hidden">
         Your side and AI side
         <div class="side">
           <div class="side--header">
@@ -93,9 +98,9 @@
           <div class="side--body">
             <img src="images/icon-rock.svg" alt="rock" />
           </div>
-        </div> -->
+        </div>
 
-        <!-- You win or lose
+        You win or lose
         <div class="result">
           <p class="result--text">YOU WIN</p>
           <button class="play-again">PLAY AGAIN</button>
@@ -108,15 +113,14 @@
           <div class="side--body>
           <img src="images/icon-paper.svg" alt="paper" />
         </div>
-      </div> -->
+      </div>
 
-      <!-- Rules 
       <button class="rules">RULES</button>
-    </div>-->
+    </div>
 
-    <!-- Rules 
+    <!-- Rules -->
 
-    <div class="rules--container">
+    <div class="rules--container hidden">
       <div class="rules--content">
         <div class="rules--header">
           <h1>Rules</h1>
@@ -137,7 +141,7 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <script src="script.js"></script>
   </body>
