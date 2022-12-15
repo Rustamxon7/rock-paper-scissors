@@ -5,11 +5,6 @@
 }
 
 body {
-<<<<<<< HEAD
-  background-color: rgb(30, 38, 71);
-  font-family: "Poppins", sans-serif;
-  font-family: "Rubik", sans-serif;
-=======
   background: linear-gradient(
     180deg,
     hsl(214, 47%, 23%) 0%,
@@ -31,52 +26,29 @@ html {
 
 .dashboard {
   height: 100%;
->>>>>>> 5bab800530ce7dc18cb224e0b611b04f6982054f
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
-  padding: 2rem 0;
-=======
   padding: 2.4rem;
   margin-bottom: 4.2rem;
->>>>>>> 5bab800530ce7dc18cb224e0b611b04f6982054f
 }
 
 .header--container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-<<<<<<< HEAD
-  width: 100%;
-  gap: 15rem;
-  padding: 1rem;
-  width: 50%;
-  height: 9rem;
-  border: 0.2px solid white;
-=======
   gap: 15rem;
   padding: 1.8rem;
   width: 50%;
   height: 14rem;
   border: 1.8px solid white;
->>>>>>> 5bab800530ce7dc18cb224e0b611b04f6982054f
   border-radius: 1rem;
 }
 
 .title {
-<<<<<<< HEAD
-  line-height: 2.4rem;
-  color: #ffff;
-}
-
-.score--board {
-  width: 9rem;
-  height: 7rem;
-=======
   line-height: 0.8;
   font-size: 1.8rem;
   color: #ffff;
@@ -86,23 +58,12 @@ html {
 .score--board {
   width: 12rem;
   height: 100%;
->>>>>>> 5bab800530ce7dc18cb224e0b611b04f6982054f
   background-color: aliceblue;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   border-radius: 0.8rem;
-<<<<<<< HEAD
-}
-
-.score {
-  font-size: 0.8rem;
-}
-
-.score--number {
-  font-size: 2.6rem;
-=======
   padding: 1.4rem;
 }
 
@@ -114,7 +75,6 @@ html {
 .score--number {
   color: hsl(229, 25%, 31%);
   font-size: 5.4rem;
->>>>>>> 5bab800530ce7dc18cb224e0b611b04f6982054f
 }
 
 .playground--special {
@@ -133,30 +93,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
-  width: 100%;
-  gap: 2rem;
-}
-
-.weapon-punch {
-  border-radius: 50%;
-  background-color: #ffff;
-  width: 10rem;
-  height: 10rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.weapon-slap {
-  border-radius: 50%;
-  background-color: #ffff;
-  width: 10rem;
-  height: 10rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-=======
   width: 80%;
   gap: 2rem;
   flex-wrap: wrap;
@@ -204,7 +140,6 @@ html {
   align-items: center;
   justify-content: center;
   box-shadow: inset 0 0.8rem 0 0 rgba(90, 90, 90, 0.25);
->>>>>>> 5bab800530ce7dc18cb224e0b611b04f6982054f
 }
 
 .mini {
@@ -214,26 +149,6 @@ html {
   padding: 1.4rem 0;
 }
 
-<<<<<<< HEAD
-.mini-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(184, 184, 45);
-  width: 12.5rem;
-  height: 12.5rem;
-  border-radius: 50%;
-}
-
-.weapon-scissor {
-  background-color: #ffff;
-  width: 10rem;
-  height: 10rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-=======z
 .scissor-color {
   display: flex;
   align-items: center;
@@ -244,42 +159,24 @@ html {
   border-radius: 50%;
   box-shadow: inset 0 -0.8rem 0 0 rgba(0, 0, 0, 0.25);
   z-index: 1;
->>>>>>> 5bab800530ce7dc18cb224e0b611b04f6982054f
 }
 
 .border-color {
   display: flex;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
-  width: 12.5rem;
-  height: 12.5rem;
-  background-color: rgb(35, 21, 187);
-  border-radius: 50%;
-=======
   width: 20rem;
   height: 20rem;
   background-image: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
   border-radius: 50%;
   box-shadow: inset 0 -0.8rem 0 0 rgba(0, 0, 0, 0.25);
   z-index: 1;
->>>>>>> 5bab800530ce7dc18cb224e0b611b04f6982054f
 }
 
 .punch-color {
   display: flex;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
-  width: 12.5rem;
-  height: 12.5rem;
-  background-color: rgb(196, 57, 26);
-  border-radius: 50%;
-}
-
-.rules {
-  width: 100%;
-=======
   width: 20rem;
   height: 20rem;
   background-image: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
@@ -297,29 +194,20 @@ html {
 }
 
 .rules {
->>>>>>> 5bab800530ce7dc18cb224e0b611b04f6982054f
   display: flex;
   align-items: center;
   justify-content: end;
   padding: 0 2rem;
-<<<<<<< HEAD
-=======
   /* palce to bottom */
   position: absolute;
   bottom: 4rem;
   right: 2rem;
->>>>>>> 5bab800530ce7dc18cb224e0b611b04f6982054f
 }
 
 .btn-rules {
   background-color: rgb(30, 38, 71);
   color: #ffff;
-<<<<<<< HEAD
-  padding: 0.2rem 2rem;
-  border-color: #ffff;
-=======
   padding: 1.4rem 2.4rem;
   border: #ffff 1px solid;
   border-radius: 0.8rem;
->>>>>>> 5bab800530ce7dc18cb224e0b611b04f6982054f
 }
