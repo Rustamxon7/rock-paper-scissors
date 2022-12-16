@@ -39,21 +39,21 @@
       <!-- <div class="playground--special">
         <div class="weapons">
           <div class="weap--container">
-            <div class="punch-color">
+            <div class="weapon--border punch-color">
               <div class="weapon-punch">
                 <img src="images/icon-rock.svg" alt="rock" />
               </div>
             </div>
             <span class="line"></span>
             <span></span>
-            <div class="border-color">
+            <div class="weapon--border border-color">
               <div class="weapon-slap">
                 <img src="images/icon-paper.svg" alt="paper" />
               </div>
             </div>
             <span class="line1"></span>
 
-            <div class="scissor-color">
+            <div class="weapon--border scissor-color">
               <div class="weapon-scissor">
                 <img src="images/icon-scissors.svg" alt="scissors" />
               </div>
@@ -64,42 +64,43 @@
       </div> -->
 
       <!-- Step 2 -->
-      <div class="playground">
+      <!-- <div class="playground">
         <div class="side">
           <div class="side--header">
             <p class="side--header--text short">YOU PICKED</p>
           </div>
-          <div class="top">
-            <div class="side--body">
-              <img src="images/icon-rock.svg" alt="rock" />
+          <div class="weapon--border weapon--border-selected border-color">
+            <div class="weapon-slap selected">
+              <img src="images/icon-paper.svg" alt="paper" />
             </div>
           </div>
         </div>
 
         <div class="side">
           <div class="side--header">
-            <p class="side--header--text shorts">THE HOUSE PICKED</p>
+            <p class="side--header--text short">THE HOUSE PICKED</p>
           </div>
-          <div class="top--none">
-          <div class="side--body dark">
-            <!-- <img src="images/icon-paper.svg" alt="paper" /> -->
-          </div></div>
+          <div class="weapon--border weapon--border-selected scissor-color">
+            <div class="weapon-scissor selected">
+              <img src="images/icon-scissors.svg" alt="scissors" />
+            </div>
+          </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- You win step-4 -->
       <!-- <div class="playground">
-        Your side and AI side
         <div class="side">
           <div class="side--header">
-            <p class="side--header--text">YOU PICKED</p>
+            <p class="side--header--text short">THE HOUSE PICKED</p>
           </div>
-          <div class="side--body">
-            <img src="images/icon-rock.svg" alt="rock" />
+          <div class="weapon--border weapon--border-selected scissor-color win">
+            <div class="weapon-scissor selected">
+              <img src="images/icon-scissors.svg" alt="scissors" />
+            </div>
           </div>
         </div>
 
-        You win or lose
         <div class="result">
           <p class="result--text">YOU WIN</p>
           <button class="play-again">PLAY AGAIN</button>
@@ -107,10 +108,13 @@
 
         <div class="side">
           <div class="side--header">
-            <p class="side--header--text">THE HOUSE PICKED</p>
+            <p class="side--header--text short">YOU PICKED</p>
           </div>
-          <div class="side--body>
-          <img src="images/icon-paper.svg" alt="paper" />
+          <div class="weapon--border weapon--border-selected border-color">
+            <div class="weapon-slap selected">
+              <img src="images/icon-paper.svg" alt="paper" />
+            </div>
+          </div>
         </div>
       </div> -->
 
@@ -121,7 +125,7 @@
 
     <!-- Rules -->
 
-    <div class="rules--container hidden">
+    <div class="rules--container">
       <div class="rules--content">
         <div class="rules--header">
           <h1>Rules</h1>
@@ -143,6 +147,8 @@
         </div>
       </div>
     </div>
+
+    <div class="overlay"></div>
 
     <script src="script.js"></script>
   </body>
