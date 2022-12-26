@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    hsl(214, 47%, 23%) 0%,
+    hsl(237, 49%, 15%) 100%
+  );
+
+  height: 100vh;
+
+  font-family: "Barlow Semi Condensed", sans-serif;
+  position: relative;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.hidden {
+  display: none;
+}
+
+.dashboard {
+  height: 100%;
+}
+
+.rules {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0 2rem;
+  position: absolute;
+  bottom: 4rem;
+  right: 2rem;
+}
+
+.btn-rules {
+  background-color: rgb(30, 38, 71);
+  color: #ffff;
+  padding: 1.4rem 2.4rem;
+  border: #ffff 1px solid;
+  border-radius: 0.8rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.4rem;
+  margin-bottom: 4.2rem;
+}
+
+.header--container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15rem;
+  padding: 1.8rem;
+  width: 50%;
+  height: 14rem;
+  border: 1.8px solid white;
+  border-radius: 1rem;
+}
+
+.title {
+  line-height: 0.8;
+  font-size: 1.8rem;
+  color: #ffff;
+  text-transform: uppercase;
+}
+
+.score--board {
+  width: 12rem;
+  height: 100%;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.8rem;
+  padding: 1.4rem;
+}
+
+.score {
+  color: hsl(189, 59%, 53%);
+  font-size: 1.8rem;
+}
+
+.score--number {
+  color: hsl(229, 25%, 31%);
+  font-size: 5.4rem;
+}
+
+.playground--special {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weapons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weap--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  gap: 2rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  top: 38%;
+  left: 65%;
+  rotate: 28deg;
+  width: 1.2rem;
+  height: 28%;
+  background-color: hsl(237, 49%, 15%);
+}
+
+.line1 {
+  position: absolute;
+  top: 38%;
+  right: 65%;
+  rotate: -28deg;
+  width: 1.2rem;
+  height: 28%;
+  background-color: hsl(237, 49%, 15%);
+}
+
+.line3 {
+  position: absolute;
+  top: 5%;
+  left: 49%;
+  rotate: 90deg;
+  width: 1.2rem;
+  height: 33%;
+  background-color: hsl(237, 49%, 15%);
+}
+
+.weapon-slap,
+.weapon-punch,
+.weapon-scissor {
+  border-radius: 50%;
+  background-color: #ffff;
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0.8rem 0 0 rgba(90, 90, 90, 0.25);
+}
+
+.mini {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.4rem 0;
+}
+
+.weapon--border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  box-shadow: inset 0 -0.8rem 0 0 rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.scissor-color {
+  background-image: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+
+.border-color {
+  background-image: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+}
+
+.punch-color {
+  background-image: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
+
+.weapon--border:hover {
+  cursor: pointer;
+  scale: 1.05;
+  transition: all 0.3s ease-in-out;
+}
+
+/* //////////////////////////////////// */
+
+.playground {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.side--header--text {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #ffff;
+  text-align: center;
+}
+
+.dark {
+  background-color: rgb(31, 26, 27);
+}
+
+.weapon--border-selected {
+  width: 30rem;
+  height: 30rem;
+}
+
+.selected {
+  width: 23rem;
+  height: 23rem;
+}
+
+.selected img {
+  width: 40%;
+  height: auto;
+}
+
+/* //////////////////////////////////// */
+/* //////////  RESULT  /////////// */
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.result--text {
+  font-size: 6.4rem;
+  font-weight: 700;
+  color: #ffff;
+  text-align: center;
+}
+
+.play-again {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.4rem 4.4rem;
+  border: none;
+  background-color: #ffff;
+  border-radius: 0.8rem;
+  color: red;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  animation: pulse 1.5s infinite;
+}
+
+.play-again:hover {
+  cursor: pointer;
+  scale: 1.05;
+  transition: all 0.3s ease-in-out;
+}
+
+.win {
+  box-shadow: rgba(133, 133, 133, 0.061) 0px 1px 20px,
+    rgba(162, 161, 161, 0.061) 0px 0px 0px 60px,
+    rgba(133, 133, 133, 0.042) 0px 0px 0px 120px,
+    rgba(133, 133, 133, 0.044) 0px 0px 0px 160px;
+
+  animation: win 1s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes win {
+  0% {
+    /* create pulse with box shadow */
+    box-shadow: rgba(133, 133, 133, 0.061) 0px 1px 20px,
+      rgba(162, 161, 161, 0.061) 0px 0px 0px 60px,
+      rgba(133, 133, 133, 0.042) 0px 0px 0px 120px,
+      rgba(133, 133, 133, 0.044) 0px 0px 0px 160px;
+  }
+
+  50% {
+    /* create pulse with box shadow */
+    box-shadow: rgba(133, 133, 133, 0.061) 0px 1px 20px,
+      rgba(162, 161, 161, 0.061) 0px 0px 0px 20px,
+      rgba(133, 133, 133, 0.042) 0px 0px 0px 90px,
+      rgba(133, 133, 133, 0.044) 0px 0px 0px 170px;
+  }
+
+  100% {
+    /* create pulse with box shadow */
+    box-shadow: rgba(133, 133, 133, 0.061) 0px 1px 20px,
+      rgba(162, 161, 161, 0.061) 0px 0px 0px 60px,
+      rgba(133, 133, 133, 0.042) 0px 0px 0px 120px,
+      rgba(133, 133, 133, 0.044) 0px 0px 0px 160px;
+  }
+}
+
+/* //////////////////////////////////// */
+/* //////////  RULES MODAL  /////////// */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.rules--container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50rem;
+  height: 50rem;
+  background-color: #ffff;
+  border-radius: 1rem;
+  z-index: 101;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.rules--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.rules--header h1 {
+  font-size: 3rem;
+}
+
+.close--rules {
+  border: none;
+  font-size: 2.2rem;
+  background-color: #ffffff;
+  color: gray;
+}
+
+.rules--body {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  padding: 3rem 0;
+}
+
+.one,
+.two,
+.three {
+  border-radius: 50%;
+  background-color: rgb(246, 235, 235);
+  width: 11rem;
+  height: 11rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.out {
+  background-color: rgb(204, 191, 191);
+  box-shadow: inset 0 0.8rem 0 rgba(90, 90, 90, 0.25);
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+}
+
+.line-one {
+  position: absolute;
+  font-size: 2.3rem;
+  padding-left: 2%;
+  top: 30%;
+}
+
+.line-two {
+  position: absolute;
+  font-size: 2.3rem;
+  top: 52%;
+  left: 60%;
+  transform: rotate(124deg);
+}
+
+.line-three {
+  position: absolute;
+  font-size: 2.3rem;
+  top: 52%;
+  right: 61%;
+  transform: rotate(-124deg);
+}
+
+.beat {
+  position: absolute;
+  font-size: 1.6rem;
+  font-weight: 900;
+  padding-left: 2%;
+  top: 30%;
+}
+
+.beat-two {
+  position: absolute;
+  font-size: 1.6rem;
+  font-weight: 900;
+  top: 55%;
+  left: 67%;
+}
+
+.beat-three {
+  position: absolute;
+  font-size: 1.6rem;
+  font-weight: 900;
+  top: 55%;
+  right: 67%;
+}

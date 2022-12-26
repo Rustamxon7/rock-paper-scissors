@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock paper scissors</title>
+  </head>
+  <body>
+    <!-- Dashboard -->
+    <div class="dashboard">
+      <div class="header">
+        <div class="header--container">
+          <div class="title">
+            <h1>
+              Rock <br />
+              Paper <br />
+              Scissors
+            </h1>
+          </div>
+
+          <div class="score--board">
+            <p class="score">SCORE</p>
+            <p class="score--number">12</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 1 -->
+      <div class="playground--special">
+        <div class="weapons">
+          <div class="weap--container">
+            <div class="weapon--border punch-color rock">
+              <div class="weapon-punch">
+                <img src="images/icon-rock.svg" alt="rock" />
+              </div>
+            </div>
+            <span class="line"></span>
+            <span></span>
+            <div class="weapon--border border-color paper">
+              <div class="weapon-slap">
+                <img src="images/icon-paper.svg" alt="paper" />
+              </div>
+            </div>
+            <span class="line1"></span>
+
+            <div class="weapon--border scissor-color scissors">
+              <div class="weapon-scissor">
+                <img src="images/icon-scissors.svg" alt="scissors" />
+              </div>
+            </div>
+            <span class="line3"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <!-- <div class="playground">
+        <div class="side">
+          <div class="side--header">
+            <p class="side--header--text short">YOU PICKED</p>
+          </div>
+          <div class="weapon--border weapon--border-selected border-color">
+            <div class="weapon-slap selected">
+              <img src="images/icon-paper.svg" alt="paper" />
+            </div>
+          </div>
+        </div>
+
+        <div class="side">
+          <div class="side--header">
+            <p class="side--header--text short">THE HOUSE PICKED</p>
+          </div>
+          <div class="weapon--border weapon--border-selected scissor-color">
+            <div class="weapon-scissor selected">
+              <img src="images/icon-scissors.svg" alt="scissors" />
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- You win step-4 -->
+      <!-- <div class="playground">
+        <div class="side">
+          <div class="side--header">
+            <p class="side--header--text short">THE HOUSE PICKED</p>
+          </div>
+          <div class="weapon--border weapon--border-selected scissor-color win">
+            <div class="weapon-scissor selected">
+              <img src="images/icon-scissors.svg" alt="scissors" />
+            </div>
+          </div>
+        </div>
+
+        <div class="result">
+          <p class="result--text">YOU WIN</p>
+          <button class="play-again">PLAY AGAIN</button>
+        </div>
+
+        <div class="side">
+          <div class="side--header">
+            <p class="side--header--text short">YOU PICKED</p>
+          </div>
+          <div class="weapon--border weapon--border-selected border-color">
+            <div class="weapon-slap selected">
+              <img src="images/icon-paper.svg" alt="paper" />
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="rules">
+        <button class="btn-rules" type="button">R U L E S</button>
+      </div>
+    </div>
+
+    <!-- Rules -->
+
+    <div id="rules" class="rules--container">
+      <div class="beat">
+        <p>BEATS</p>
+      </div>
+      <div class="beat-two">
+        <p>BEATS</p>
+      </div>
+      <div class="beat-three">
+        <p>BEATS</p>
+      </div>
+      <div class="line-one"><h1>←</h1></div>
+      <div class="line-two"><h1>←</h1></div>
+      <div class="line-three"><h1>←</h1></div>
+      <div class="rules--header">
+        <h1>Rules</h1>
+        <button class="close--rules">X</button>
+      </div>
+      <div class="rules--content">
+        <div class="rules--body">
+          <div class="out">
+            <div class="rule one">
+              <img src="images/icon-rock.svg" alt="rock" />
+            </div>
+          </div>
+          <div class="out">
+            <div class="rule two">
+              <img src="images/icon-paper.svg" alt="paper" />
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="out">
+            <div class="rule three">
+              <img src="images/icon-scissors.svg" alt="scissors" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <div id="overlay" class="overlay"></div>
+   
+    <script src="script.js"></script>
+  </body>
+</html>
