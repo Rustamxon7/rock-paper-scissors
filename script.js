@@ -67,4 +67,4 @@ const playGame = (option) => {
   console.log(result);
 };
 
-playGame("rock");
+playGame("paper");
